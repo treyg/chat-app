@@ -55,9 +55,8 @@ a {
 .chat-header {
 	background: var(--dark-color-a);
 	color: #fff;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	padding: 15px;
+	border-bottom: 2px solid #010101;
+	padding: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -121,6 +120,7 @@ a {
 
 .chat-form-container {
 	padding: 20px 30px;
+	border-top: 2px solid #010101;
 	background-color: var(--dark-color-a);
 }
 
@@ -146,8 +146,7 @@ a {
 	text-align: center;
 	padding: 20px;
 	background: var(--dark-color-a);
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-bottom: 2px solid black;
 }
 
 .join-main {
@@ -161,6 +160,13 @@ a {
 
 .join-main .form-control {
 	margin-bottom: 20px;
+}
+
+.form-control input {
+	background-color: #16161a;
+	color: #94a1b2;
+	border: 2px solid #010101;
+	border-radius: 5px;
 }
 
 .join-main label {
@@ -182,6 +188,11 @@ a {
 	width: 100%;
 }
 
+select option {
+	background: black;
+	border-radius: 5px;;
+}
+
 .join-main .btn {
 	margin-top: 20px;
 	width: 100%;
@@ -201,6 +212,7 @@ a {
 @media (max-width: 700px) {
 	.chat-main {
 		display: block;
+	
 	}
 
 	.chat-container {
@@ -218,6 +230,26 @@ a {
 		position: fixed;
 		bottom: 0;
 		width: 100%;
+	}
+
+	.join-main {
+		height: 90%;
+		padding: 0;
+	}
+
+	.join-container {
+		max-width: 500px;
+		margin: 0;
+		color: #fff;
+		height: 100vh;
 	
 	}
+
+	.index-form {
+		width: 80%;
+		display: block;
+		margin: auto;
+		padding-top: 150px;
+	}
+
 }
